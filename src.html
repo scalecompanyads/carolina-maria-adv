@@ -328,8 +328,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .sec { padding: 84px 0; }
     .topbar { width: calc(100% - 24px); padding: 10px 10px 10px 16px; border-radius: 0 0 18px 18px; }
     .topbar:not(.show) { transform: translate(-50%, -110%); opacity: 0; pointer-events: none; }
-    .topbar .logo { width: 150px; }
-    .topbar .btn { width: auto; padding: 10px 14px; font-size: 10.5px; gap: 7px; letter-spacing: .06em; }
+    .topbar .logo { width: 40px; height: 40px; object-fit: contain; }
+    .topbar .btn { width: auto; padding: 11px 16px; font-size: 11.5px; gap: 8px; letter-spacing: .06em; }
     .topbar .btn svg { width: 15px; height: 15px; }
     .hero { padding-top: 0; }
     .hero-grid { grid-template-columns: 1fr; gap: 0; }
@@ -391,7 +391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Header -->
   <div class="topbar">
-    <img class="logo" src="{{ASSETS}}/logo-horizontal-dark.png" alt="Carolina Neves Hohlenwerger · Advogada" width="1000" height="187">
+    <picture><source media="(max-width: 760px)" srcset="{{ASSETS}}/logo-mono.png" width="175" height="176"><img class="logo" src="{{ASSETS}}/logo-horizontal-dark.png" alt="Carolina Neves Hohlenwerger · Advogada" width="1000" height="187"></picture>
     <a class="btn wa-link" data-cta="topo" data-perfil="geral" href="{{WA_GERAL}}" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
   </div>
 
