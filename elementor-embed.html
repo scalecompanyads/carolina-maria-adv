@@ -1,0 +1,789 @@
+<!--
+  Carolina Hohlenwerger Advocacia · LP de Captação (verbas não pagas no serviço público) · widget HTML do Elementor
+  Página: modelo "Elementor Canvas", 1 seção full width sem padding, 1 widget HTML com este código.
+  Imagens: subir o conteúdo de assets/ em https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/ (ou ajustar ASSETS_EMBED em build.js e rodar de novo).
+  GTM (GTM-M6NT5GX4) com trava contra duplicidade. Cliques no WhatsApp disparam "whatsapp_click" (cta_position, perfil).
+-->
+<!-- Google Tag Manager (só carrega se o site ainda não tiver este container) -->
+<script>(function(w,d,s,l,i){if(w.google_tag_manager&&w.google_tag_manager[i])return;
+if(d.querySelector('script[src*="googletagmanager.com/gtm.js?id='+i+'"]'))return;
+w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6NT5GX4');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6NT5GX4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/carolina-hero.jpg" fetchpriority="high">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Jost:wght@400;500;600&family=League+Spartan:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Jost:wght@400;500;600&family=League+Spartan:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Jost:wght@400;500;600&family=League+Spartan:wght@500;600;700&display=swap"></noscript>
+<style>
+
+  #cnh-lp {
+    --plum: #7b515c;        
+    --plum-hi: #8c5f6b;
+    --plum-deep: #4c2d36;
+    --plum-ink: #24161b;    
+    --gold: #c9ab6f;
+    --gold-hi: #e2cc98;
+    --gold-lo: #8f7240;
+    --gold-grad: linear-gradient(90deg, #dcc48d 0%, #b8975b 50%, #85693a 100%);
+    --cream: #f6f0ea;
+    --sand: #ece2d9;
+    --paper: #fffcf9;
+    --ink: #2a1d21;
+    --muted: #75656a;
+    --muted-dark: #bfaeb3;
+    --line: rgba(42,29,33,.12);
+    --line-dark: rgba(246,240,234,.14);
+    --green: #2fa34f;
+    --head: "League Spartan", "Jost", system-ui, sans-serif;
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --sans: "Jost", system-ui, -apple-system, sans-serif;
+    --wrap: 1180px;
+    --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  #cnh-lp *, #cnh-lp *::before, #cnh-lp *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  #cnh-lp {
+    margin: 0; background: var(--cream); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  #cnh-lp img { max-width: 100%; height: auto; display: block; }
+  #cnh-lp a { color: inherit; }
+  #cnh-lp .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+  #cnh-lp section { position: relative; scroll-margin-top: 70px; }
+
+  #cnh-lp h1, #cnh-lp h2, #cnh-lp h3 { font-family: var(--head); font-weight: 600; letter-spacing: -.01em; line-height: 1.08; margin: 0; text-wrap: balance; }
+  #cnh-lp h1 em, #cnh-lp h2 em, #cnh-lp h3 em { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spacing: 0; color: var(--plum); }
+  #cnh-lp p, #cnh-lp li { text-wrap: pretty; }
+  #cnh-lp p { margin: 0; }
+
+  #cnh-lp .eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 12.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--plum); }
+  #cnh-lp .eyebrow::before { content: ""; width: 34px; height: 2px; background: var(--gold-grad); flex: none; }
+  #cnh-lp .ed-title { font-size: clamp(1.9rem, 3.5vw, 2.9rem); line-height: 1.08; text-transform: uppercase; letter-spacing: .005em; }
+  #cnh-lp .ed-title em { text-transform: none; font-size: 1.12em; line-height: .9; }
+  #cnh-lp .lead-p { margin-top: 20px; font-size: 1.08rem; color: var(--muted); max-width: 58ch; }
+  #cnh-lp .lead-p strong { color: var(--ink); font-weight: 600; }
+
+  
+  #cnh-lp .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+    padding: 19px 30px; border-radius: 999px;
+    background: linear-gradient(180deg, #46b866 0%, var(--green) 55%, #288c44 100%); color: #fff; text-decoration: none;
+    font-family: var(--sans); font-weight: 600; font-size: 14px; letter-spacing: .1em; text-transform: uppercase;
+    box-shadow: 0 12px 30px -12px rgba(30,110,55,.7), inset 0 1px 0 rgba(255,255,255,.2);
+    transition: background .2s ease, transform .1s ease-out, box-shadow .2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #cnh-lp .btn:hover { background: linear-gradient(180deg, #52c373 0%, #36b058 55%, #2c984a 100%); box-shadow: 0 16px 34px -12px rgba(30,110,55,.8), 0 0 24px rgba(47,163,79,.35); }
+  #cnh-lp .btn:active { transform: scale(.97); }
+  #cnh-lp .btn svg { width: 20px; height: 20px; flex: none; }
+  #cnh-lp .cta-row { margin-top: 40px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+  #cnh-lp .cta-note { font-size: 13.5px; color: var(--muted); display: inline-flex; align-items: center; gap: 8px; }
+  #cnh-lp .cta-note svg { width: 16px; height: 16px; color: var(--gold-lo); }
+
+  
+  #cnh-lp .tex { position: relative; isolation: isolate; color: var(--cream); background: radial-gradient(120% 90% at 20% 10%, var(--plum-hi) 0%, var(--plum) 45%, var(--plum-deep) 100%); }
+  #cnh-lp .tex::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: var(--noise); opacity: .14; mix-blend-mode: multiply; }
+  #cnh-lp .tex h1 em, #cnh-lp .tex h2 em, #cnh-lp .tex h3 em { color: var(--gold-hi); }
+  #cnh-lp .tex .eyebrow { color: var(--gold-hi); }
+  #cnh-lp .tex .lead-p { color: rgba(246,240,234,.84); }
+  #cnh-lp .tex .lead-p strong { color: #fff; }
+  #cnh-lp .tex .cta-note { color: rgba(246,240,234,.7); }
+  #cnh-lp .tex .cta-note svg { color: var(--gold-hi); }
+
+  
+  #cnh-lp .topbar {
+    position: fixed; z-index: 50; top: 0; left: 50%; transform: translateX(-50%);
+    width: calc(100% - 48px); max-width: calc(var(--wrap) - 24px);
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 12px 12px 12px 26px; border-radius: 0 0 22px 22px;
+    background: #fff; border: 1px solid rgba(42,29,33,.06); border-top: 0;
+    box-shadow: 0 10px 30px -14px rgba(42,29,33,.4);
+    transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .25s ease;
+  }
+  #cnh-lp .topbar .logo { width: 220px; height: auto; }
+  #cnh-lp .topbar .btn { padding: 12px 20px; font-size: 12px; box-shadow: none; }
+  #cnh-lp .topbar .btn svg { width: 17px; height: 17px; }
+
+  
+  #cnh-lp .hero { min-height: 100vh; min-height: 100svh; padding: 140px 0 0; display: flex; flex-direction: column; overflow: hidden; }
+  #cnh-lp .hero-grid { flex: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+  #cnh-lp .hero h1 { margin-top: 22px; font-size: clamp(2.3rem, 4.5vw, 3.9rem); line-height: 1.02; color: #fff; }
+  #cnh-lp .hero .lead-p { font-size: clamp(1.04rem, 1.35vw, 1.17rem); max-width: 52ch; }
+  #cnh-lp .hero .cta-row { margin-top: 34px; }
+  #cnh-lp .hero-grid { padding-bottom: 56px; }
+  #cnh-lp .hero-media { position: relative; align-self: center; margin: 0 auto; width: 100%; max-width: 420px; }
+  #cnh-lp .hero-photo { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 20px; background: #cfc9c7; box-shadow: 0 40px 80px -40px rgba(20,8,12,.7); }
+  #cnh-lp .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+  #cnh-lp .hero-photo::before { content: ""; position: absolute; z-index: 2; inset: 14px; border: 1px solid rgba(226,204,152,.75); border-radius: 12px; pointer-events: none; }
+  #cnh-lp .hero-photo::after { content: ""; position: absolute; inset: auto 0 0 0; height: 34%; background: linear-gradient(0deg, rgba(76,45,54,.75), transparent); }
+  #cnh-lp .hero-sign { position: absolute; z-index: 3; left: 0; right: 0; bottom: 30px; color: #fff; text-align: center; }
+  #cnh-lp .hero-sign strong { display: block; font-family: var(--head); font-weight: 600; font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; }
+  #cnh-lp .hero-sign span { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-hi); }
+
+  
+  #cnh-lp .hero-strip { position: relative; overflow: hidden; border-top: 1px solid rgba(246,240,234,.2); background: rgba(36,22,27,.28); padding: 18px 0; }
+  #cnh-lp .hero-strip::before, #cnh-lp .hero-strip::after { content: ""; position: absolute; z-index: 1; top: 0; bottom: 0; width: 120px; pointer-events: none; }
+  #cnh-lp .hero-strip::before { left: 0; background: linear-gradient(90deg, #4f2f38 10%, transparent); }
+  #cnh-lp .hero-strip::after { right: 0; background: linear-gradient(270deg, #4f2f38 10%, transparent); }
+  #cnh-lp .strip-track { display: flex; width: max-content; animation: strip 18s linear infinite; }
+  #cnh-lp .hero-strip:hover .strip-track { animation-play-state: paused; }
+  #cnh-lp .strip-group { display: flex; flex: none; list-style: none; margin: 0; padding: 0; }
+  #cnh-lp .strip-group li { display: inline-flex; align-items: center; gap: 10px; margin-right: 48px; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.32rem; color: rgba(246,240,234,.92); white-space: nowrap; }
+  #cnh-lp .strip-group svg { width: 19px; height: 19px; color: var(--gold-hi); }
+  @keyframes strip { to { transform: translateX(-50%); } }
+
+  
+  #cnh-lp .sec { padding: 120px 0; }
+  #cnh-lp .cream { background: var(--cream); }
+  #cnh-lp .sand { background: var(--sand); }
+  #cnh-lp .paper { background: var(--paper); }
+  #cnh-lp .dark { background: var(--plum-ink); color: var(--cream); }
+  #cnh-lp .dark h2 em, #cnh-lp .dark h3 em { color: var(--gold-hi); }
+  #cnh-lp .dark .eyebrow { color: var(--gold-hi); }
+  #cnh-lp .dark .lead-p { color: var(--muted-dark); }
+  #cnh-lp .dark .lead-p strong { color: #fff; }
+  #cnh-lp .dark .cta-note { color: var(--muted-dark); }
+  #cnh-lp .ed-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 56px; }
+  #cnh-lp .ed-head > div { max-width: 700px; }
+  #cnh-lp .ed-head .ed-title { margin-top: 18px; }
+  #cnh-lp .ed-head .btn { flex: none; }
+
+  
+  #cnh-lp .pick-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 20px; }
+  #cnh-lp .pick {
+    position: relative; display: flex; flex-direction: column; padding: 34px 30px 30px; border-radius: 18px; text-decoration: none;
+    background: var(--paper); border: 1px solid var(--line);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  #cnh-lp .pick:hover { transform: translateY(-4px); box-shadow: 0 30px 50px -34px rgba(76,45,54,.55); border-color: rgba(123,81,92,.35); }
+  #cnh-lp .pick-grid .pick.main, #cnh-lp .pick-grid .pick.main:hover { color: var(--cream); border: 0; background: radial-gradient(120% 90% at 20% 10%, var(--plum-hi) 0%, var(--plum) 45%, var(--plum-deep) 100%); }
+  #cnh-lp .pick-tag { position: absolute; top: 22px; right: 22px; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-hi); }
+  #cnh-lp .pick-ic { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: rgba(123,81,92,.09); border: 1px solid rgba(123,81,92,.22); color: var(--plum); }
+  #cnh-lp .pick.main .pick-ic { background: rgba(255,255,255,.08); border-color: rgba(226,204,152,.45); color: var(--gold-hi); }
+  #cnh-lp .pick-ic svg { width: 26px; height: 26px; }
+  #cnh-lp .pick h3 { margin: 26px 0 10px; font-size: 1.5rem; line-height: 1.12; }
+  #cnh-lp .pick p { color: var(--muted); font-size: .98rem; }
+  #cnh-lp .pick.main p { color: rgba(246,240,234,.84); }
+  #cnh-lp .pick-more { margin-top: auto; padding-top: 26px; display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--plum); }
+  #cnh-lp .pick.main .pick-more { color: var(--gold-hi); }
+  #cnh-lp .pick-more svg { width: 16px; height: 16px; transition: transform .2s ease; }
+  #cnh-lp .pick:hover .pick-more svg { transform: translateX(4px); }
+
+  
+  #cnh-lp .prof .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  #cnh-lp .prof-side { position: sticky; top: 120px; }
+  #cnh-lp .prof-num { display: block; font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 1.25rem; color: var(--gold-lo); margin-bottom: 14px; }
+  #cnh-lp .tex .prof-num, #cnh-lp .dark .prof-num { color: var(--gold-hi); }
+  #cnh-lp .prof-side .ed-title { margin-top: 18px; }
+  #cnh-lp .prof-side .cta-row { margin-top: 34px; }
+  #cnh-lp .prof-panel { border-radius: 20px; padding: 40px 40px 34px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 30px 60px -44px rgba(76,45,54,.5); }
+  #cnh-lp .tex .prof-panel { background: rgba(255,255,255,.06); border-color: rgba(226,204,152,.28); box-shadow: none; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  #cnh-lp .prof-panel h3 { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--plum); }
+  #cnh-lp .tex .prof-panel h3 { color: var(--gold-hi); }
+  #cnh-lp .verbas { list-style: none; margin: 18px 0 0; padding: 0; }
+  #cnh-lp .verbas li { display: flex; gap: 18px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  #cnh-lp .tex .verbas li { border-color: rgba(246,240,234,.14); }
+  #cnh-lp .verbas li:last-child { border-bottom: 0; }
+  #cnh-lp .verbas .v-ic { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--gold-grad); color: #fff; }
+  #cnh-lp .verbas .v-ic svg { width: 20px; height: 20px; }
+  #cnh-lp .verbas strong { display: block; font-family: var(--head); font-weight: 600; font-size: 1.12rem; line-height: 1.25; }
+  #cnh-lp .verbas span.t { display: block; margin-top: 3px; font-size: .95rem; color: var(--muted); }
+  #cnh-lp .tex .verbas span.t { color: rgba(246,240,234,.75); }
+  #cnh-lp .prof-foot { margin-top: 18px; padding-top: 18px; border-top: 1px dashed var(--line); font-size: 13.5px; color: var(--muted); }
+  #cnh-lp .tex .prof-foot { border-color: rgba(246,240,234,.2); color: rgba(246,240,234,.7); }
+
+  
+  #cnh-lp .obj .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
+  #cnh-lp .obj-side { position: sticky; top: 120px; }
+  #cnh-lp .obj-side .ed-title { margin-top: 18px; }
+  #cnh-lp .obj-list { display: grid; gap: 6px; }
+  #cnh-lp .obj-item { padding: 26px 28px; border-radius: 16px; border: 1px solid transparent; transition: background .3s ease, border-color .3s ease; }
+  #cnh-lp .obj-item:hover, #cnh-lp .obj-item.is-hl { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); }
+  #cnh-lp .obj-q { display: flex; gap: 14px; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.5rem; line-height: 1.25; color: #fff; }
+  #cnh-lp .obj-q::before { content: "“"; font-size: 2.6rem; line-height: .8; color: var(--gold); flex: none; }
+  #cnh-lp .obj-a { margin-top: 12px; padding-left: 34px; color: var(--muted-dark); font-size: 1rem; }
+  #cnh-lp .obj-a strong { color: #fff; font-weight: 500; }
+
+  
+  #cnh-lp .how-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 28px; }
+  #cnh-lp .how-step { position: relative; padding-top: 34px; border-top: 1px solid rgba(226,204,152,.5); }
+  #cnh-lp .how-step::before { content: ""; position: absolute; top: -6px; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--gold-hi); box-shadow: 0 0 0 5px rgba(226,204,152,.2); }
+  #cnh-lp .how-num { display: block; font-family: var(--serif); font-style: italic; font-weight: 600; font-size: clamp(2.8rem, 4.2vw, 3.6rem); line-height: 1; color: var(--gold-hi); }
+  #cnh-lp .how-step h3 { margin: 20px 0 8px; font-size: 1.25rem; color: #fff; }
+  #cnh-lp .how-step p { color: rgba(246,240,234,.84); font-size: .97rem; line-height: 1.55; }
+
+  
+  #cnh-lp .info .wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: center; }
+  #cnh-lp .info-photo { position: relative; aspect-ratio: 4 / 5; border-radius: 18px; overflow: hidden; background: #cfc9c7; box-shadow: 0 40px 70px -46px rgba(76,45,54,.7); }
+  #cnh-lp .info-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+  #cnh-lp .info-media { position: relative; }
+  #cnh-lp .info-media::before { content: ""; position: absolute; inset: 22px -22px -22px 22px; border: 2px solid var(--gold); border-radius: 18px; z-index: -1; }
+  #cnh-lp .info .ed-title { margin-top: 18px; }
+  #cnh-lp .checks { list-style: none; margin: 34px 0 0; padding: 0; counter-reset: c; border-top: 1px solid var(--line); }
+  #cnh-lp .checks li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: start; padding: 18px 0; border-bottom: 1px solid var(--line); counter-increment: c; }
+  #cnh-lp .checks li::before { content: counter(c, decimal-leading-zero); font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 1.6rem; line-height: 1.1; color: var(--plum); }
+  #cnh-lp .checks strong { display: block; font-family: var(--head); font-weight: 600; font-size: 1.12rem; line-height: 1.3; }
+  #cnh-lp .checks span { display: block; color: var(--muted); font-size: .95rem; margin-top: 2px; }
+
+  
+  #cnh-lp .about-top { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: center; margin-bottom: 72px; }
+  #cnh-lp .about-photo { position: relative; aspect-ratio: 4 / 5; border-radius: 18px; overflow: hidden; background: #cfc9c7; }
+  #cnh-lp .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; }
+  #cnh-lp .about-photo::after { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(226,204,152,.6); border-radius: 10px; pointer-events: none; }
+  #cnh-lp .about-name { margin-top: 26px; display: flex; align-items: center; gap: 18px; }
+  #cnh-lp .about-name img { width: 58px; height: 58px; border-radius: 12px; flex: none; }
+  #cnh-lp .about-name strong { display: block; font-family: var(--head); font-weight: 600; font-size: 1.15rem; letter-spacing: .06em; text-transform: uppercase; color: #fff; }
+  #cnh-lp .about-name span { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-hi); }
+  #cnh-lp .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-dark); }
+  #cnh-lp .why-cell { display: flex; gap: 20px; align-items: flex-start; padding: 34px 30px 34px 0; border-bottom: 1px solid var(--line-dark); }
+  #cnh-lp .why-cell:not(:nth-child(3n+1)) { padding-left: 30px; border-left: 1px solid var(--line-dark); }
+  #cnh-lp .why-ic { flex: none; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; border: 1px solid rgba(226,204,152,.4); color: var(--gold-hi); }
+  #cnh-lp .why-ic svg { width: 21px; height: 21px; }
+  #cnh-lp .why-cell h3 { font-size: 1.2rem; line-height: 1.22; color: #fff; }
+  #cnh-lp .why-cell p { margin-top: 8px; color: var(--muted-dark); font-size: .95rem; }
+  #cnh-lp .why-cell.cta-cell { align-items: center; }
+  #cnh-lp .why-cell.cta-cell .btn { width: 100%; }
+
+  
+  #cnh-lp .faq .wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: start; }
+  #cnh-lp .faq-side { position: sticky; top: 120px; }
+  #cnh-lp .faq-side .ed-title { margin-top: 18px; }
+  #cnh-lp .faq-side .cta-row { margin-top: 30px; }
+  #cnh-lp .faq-list { border-top: 1px solid var(--line); }
+  #cnh-lp .faq-item { border-bottom: 1px solid var(--line); }
+  #cnh-lp .faq-item summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; font-family: var(--head); font-weight: 600; font-size: 1.18rem; line-height: 1.3; -webkit-tap-highlight-color: transparent; }
+  #cnh-lp .faq-item summary::-webkit-details-marker { display: none; }
+  #cnh-lp .faq-plus { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(42,29,33,.25); display: grid; place-items: center; transition: background .25s ease, color .25s ease, border-color .25s ease; }
+  #cnh-lp .faq-plus svg { width: 13px; height: 13px; transition: transform .25s ease; }
+  #cnh-lp .faq-item summary:hover .faq-plus { border-color: var(--plum); color: var(--plum); }
+  #cnh-lp .faq-item[open] .faq-plus { background: var(--plum); border-color: var(--plum); color: #fff; }
+  #cnh-lp .faq-item[open] .faq-plus svg { transform: rotate(45deg); }
+  #cnh-lp .faq-a { padding: 0 60px 26px 0; }
+  #cnh-lp .faq-a p { color: var(--muted); font-size: 1rem; line-height: 1.7; max-width: 62ch; }
+
+  
+  #cnh-lp .final { overflow: hidden; }
+  #cnh-lp .final .wrap { display: grid; grid-template-columns: 1.2fr .8fr; gap: 64px; align-items: end; }
+  #cnh-lp .final-copy { padding: 110px 0; }
+  #cnh-lp .final .ed-title { color: #fff; font-size: clamp(2rem, 3.8vw, 3.1rem); }
+  #cnh-lp .final-photo { align-self: end; width: 100%; max-width: 380px; margin-left: auto; aspect-ratio: 4 / 5; border-radius: 200px 200px 0 0; overflow: hidden; background: #cfc9c7; border: 2px solid var(--gold); border-bottom: 0; }
+  #cnh-lp .final-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%; }
+
+  
+  #cnh-lp .footer { padding: 72px 0 36px; background: var(--plum-ink); color: var(--cream); }
+  #cnh-lp .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 48px; }
+  #cnh-lp .footer .logo { width: 260px; height: auto; aspect-ratio: 1000 / 187; object-fit: contain; }
+  #cnh-lp .footer h4 { margin: 0 0 18px; font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+  #cnh-lp .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  #cnh-lp .footer li, #cnh-lp .footer li a { display: flex; gap: 12px; align-items: flex-start; text-decoration: none; color: #ddd0d4; font-size: 14.5px; line-height: 1.5; }
+  #cnh-lp .footer li a:hover { color: #fff; }
+  #cnh-lp .footer svg { width: 18px; height: 18px; flex: none; margin-top: 2px; color: var(--gold); }
+  #cnh-lp .disclaimer { margin-top: 52px; padding-top: 26px; border-top: 1px solid var(--line-dark); font-size: 12.5px; color: #9d8b91; max-width: 92ch; }
+  #cnh-lp .copy { margin-top: 12px; font-size: 12.5px; color: #7d6c72; }
+
+  
+  #cnh-lp .wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 60px; height: 60px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; box-shadow: 0 12px 30px -8px rgba(0,0,0,.5); transition: transform .1s ease-out, opacity .3s ease, visibility .3s; opacity: 0; visibility: hidden; }
+  #cnh-lp .wa-float::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--green); z-index: -1; animation: pulse 2.6s ease-out infinite; }
+  #cnh-lp .wa-float.show { opacity: 1; visibility: visible; }
+  #cnh-lp .wa-float:active { transform: scale(.94); }
+  #cnh-lp .wa-float svg { width: 30px; height: 30px; }
+  @keyframes pulse { 0% { transform: scale(1); opacity: .45; } 70%, 100% { transform: scale(1.6); opacity: 0; } }
+
+  
+  #cnh-lp .rv { opacity: 0; transform: translateY(18px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); transition-delay: var(--d, 0s); }
+  #cnh-lp .rv.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    #cnh-lp .rv { opacity: 1; transform: none; transition: none; }
+    #cnh-lp .wa-float::after, #cnh-lp .strip-track { animation: none; }
+  }
+
+  
+  @media (max-width: 1020px) {
+    #cnh-lp .hero-grid { grid-template-columns: 1fr .8fr; gap: 36px; }
+    #cnh-lp .pick-grid { grid-template-columns: 1fr 1fr; }
+    #cnh-lp .pick.main { grid-column: 1 / -1; }
+    #cnh-lp .prof .wrap, #cnh-lp .obj .wrap, #cnh-lp .faq .wrap, #cnh-lp .info .wrap { grid-template-columns: 1fr; gap: 48px; }
+    #cnh-lp .prof-side, #cnh-lp .obj-side, #cnh-lp .faq-side { position: static; }
+    #cnh-lp .info-media { max-width: 460px; }
+    #cnh-lp .ed-head { flex-direction: column; align-items: flex-start; gap: 24px; margin-bottom: 44px; }
+    #cnh-lp .how-steps { grid-template-columns: repeat(2, 1fr); gap: 44px 28px; }
+    #cnh-lp .about-top { grid-template-columns: 1fr 1fr; gap: 44px; }
+    #cnh-lp .why-grid { grid-template-columns: 1fr 1fr; }
+    #cnh-lp .why-cell, #cnh-lp .why-cell:not(:nth-child(3n+1)) { padding: 30px 24px 30px 0; border-left: 0; }
+    #cnh-lp .why-cell:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--line-dark); }
+    #cnh-lp .footer-grid { grid-template-columns: 1fr 1fr; }
+    #cnh-lp .footer-grid > :first-child { grid-column: 1 / -1; }
+  }
+  @media (max-width: 760px) {
+    #cnh-lp { font-size: 16px; }
+    #cnh-lp .wrap { padding: 0 20px; }
+    #cnh-lp .sec { padding: 84px 0; }
+    #cnh-lp .topbar { width: calc(100% - 24px); padding: 10px 10px 10px 16px; border-radius: 0 0 18px 18px; }
+    #cnh-lp .topbar:not(.show) { transform: translate(-50%, -110%); opacity: 0; pointer-events: none; }
+    #cnh-lp .topbar .logo { width: 150px; }
+    #cnh-lp .topbar .btn { width: auto; padding: 10px 14px; font-size: 10.5px; gap: 7px; letter-spacing: .06em; }
+    #cnh-lp .topbar .btn svg { width: 15px; height: 15px; }
+    #cnh-lp .hero { padding-top: 0; }
+    #cnh-lp .hero-grid { grid-template-columns: 1fr; gap: 0; }
+    #cnh-lp .hero-media { order: -1; max-width: none; margin: 0 -20px; width: calc(100% + 40px); }
+    #cnh-lp .hero-grid { padding-bottom: 0; }
+    #cnh-lp .hero-photo { aspect-ratio: auto; height: 52svh; min-height: 330px; max-height: 470px; border-radius: 0; box-shadow: none; }
+    #cnh-lp .hero-photo::before { display: none; }
+    #cnh-lp .hero-photo img { object-position: 50% 8%; }
+    #cnh-lp .hero-photo::after { height: 60%; background: linear-gradient(0deg, #6f4852 0%, rgba(111,72,82,.6) 35%, transparent); }
+    #cnh-lp .hero-logo-m { display: block !important; position: absolute; z-index: 3; top: 20px; left: 20px; width: 190px; height: auto; }
+    #cnh-lp .hero-sign { display: none; }
+    #cnh-lp .hero-copy { position: relative; z-index: 3; margin-top: -84px; padding-bottom: 34px; }
+    #cnh-lp .hero h1 { font-size: 2.15rem; margin-top: 16px; }
+    #cnh-lp .hero .eyebrow { font-size: 11px; letter-spacing: .16em; }
+    #cnh-lp .hero .cta-row { margin-top: 26px; }
+    #cnh-lp .hero-strip::before, #cnh-lp .hero-strip::after { width: 48px; }
+    #cnh-lp .strip-group li { font-size: 1.15rem; margin-right: 34px; }
+    #cnh-lp .pick-grid { grid-template-columns: 1fr; }
+    #cnh-lp .pick { padding: 28px 24px 24px; }
+    #cnh-lp .prof-panel { padding: 28px 22px 24px; }
+    #cnh-lp .obj-item { padding: 22px 4px; }
+    #cnh-lp .obj-q { font-size: 1.3rem; }
+    #cnh-lp .obj-a { padding-left: 0; }
+    #cnh-lp .how-steps { grid-template-columns: 1fr; gap: 36px; }
+    #cnh-lp .info-media::before { inset: 14px -10px -14px 10px; }
+    #cnh-lp .about-top { grid-template-columns: 1fr; margin-bottom: 52px; }
+    #cnh-lp .about-photo { max-width: 420px; }
+    #cnh-lp .why-grid { grid-template-columns: 1fr; }
+    #cnh-lp .why-cell, #cnh-lp .why-cell:nth-child(even), #cnh-lp .why-cell:not(:nth-child(3n+1)) { padding: 26px 0; border-left: 0; }
+    #cnh-lp .faq-a { padding: 0 0 22px; }
+    #cnh-lp .faq-item summary { padding: 20px 0; font-size: 1.08rem; }
+    #cnh-lp .final .wrap { grid-template-columns: 1fr; gap: 0; }
+    #cnh-lp .final-copy { padding: 84px 0 44px; }
+    #cnh-lp .final-photo { margin: 0 auto; width: 78%; }
+    #cnh-lp .btn { width: 100%; padding: 19px 14px; font-size: 13px; letter-spacing: .06em; white-space: nowrap; }
+    #cnh-lp .cta-row { align-items: stretch; }
+    #cnh-lp .cta-note { justify-content: center; }
+    #cnh-lp .footer-grid { grid-template-columns: 1fr; }
+    #cnh-lp .footer .logo { width: 220px; height: auto; }
+    #cnh-lp .wa-float { right: 16px; bottom: 16px; width: 56px; height: 56px; }
+  }
+
+  #cnh-lp { position: relative; width: 100vw; max-width: 100vw; margin-left: calc(50% - 50vw); overflow-x: hidden; }
+  #cnh-lp h1, #cnh-lp h2, #cnh-lp h3, #cnh-lp h4 { text-transform: none; }
+  #cnh-lp .ed-title { text-transform: uppercase; }
+  #cnh-lp .hero h1, #cnh-lp .final .ed-title, #cnh-lp .how-step h3, #cnh-lp .why-cell h3 { color: #fff; }
+  #cnh-lp a:hover, #cnh-lp a:focus { text-decoration: none; }
+  #cnh-lp .btn, #cnh-lp .btn:hover, #cnh-lp .btn:focus { color: #fff; }
+  #cnh-lp ul, #cnh-lp li { margin: 0; }
+  #cnh-lp section { margin: 0; }
+
+</style>
+
+<div id="cnh-lp">
+<!-- Ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.37 9.37 0 0 1-1.44-5c0-5.19 4.23-9.41 9.42-9.41a9.35 9.35 0 0 1 6.66 2.76 9.35 9.35 0 0 1 2.75 6.66c0 5.19-4.23 9.41-9.42 9.41m8.02-17.43A11.27 11.27 0 0 0 12.05.75C5.8.75.7 5.84.7 12.1c0 2 .52 3.95 1.52 5.67L.6 23.25l5.6-1.47a11.3 11.3 0 0 0 5.84 1.49h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.33-8.03"/></symbol>
+    <symbol id="ic-sun" viewBox="0 0 256 256"><g fill="currentColor"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm8,24a64,64,0,1,0,64,64A64.07,64.07,0,0,0,128,64ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/></g></symbol>
+    <symbol id="ic-coins" viewBox="0 0 256 256"><g fill="currentColor"><path d="M184,89.57V84c0-25.08-37.83-44-88-44S8,58.92,8,84v40c0,20.89,26.25,37.49,64,42.46V172c0,25.08,37.83,44,88,44s88-18.92,88-44V132C248,111.3,222.58,94.68,184,89.57ZM56,146.87C36.41,141.4,24,132.39,24,124V109.93c8.16,5.78,19.09,10.44,32,13.57Zm80-23.37c12.91-3.13,23.84-7.79,32-13.57V124c0,8.39-12.41,17.4-32,22.87Zm-16,71.37C100.41,189.4,88,180.39,88,172v-4.17c2.63.1,5.29.17,8,.17,3.88,0,7.67-.13,11.39-.35A121.92,121.92,0,0,0,120,171.41Zm0-44.62A163,163,0,0,1,96,152a163,163,0,0,1-24-1.75V126.46A183.74,183.74,0,0,0,96,128a183.74,183.74,0,0,0,24-1.54Zm64,48a165.45,165.45,0,0,1-48,0V174.4a179.48,179.48,0,0,0,24,1.6,183.74,183.74,0,0,0,24-1.54ZM232,172c0,8.39-12.41,17.4-32,22.87V171.5c12.91-3.13,23.84-7.79,32-13.57Z"/></g></symbol>
+    <symbol id="ic-gift" viewBox="0 0 256 256"><g fill="currentColor"><path d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16h60a4,4,0,0,0,4-4V120H40V88h80v32h16V88h80v32H136v92a4,4,0,0,0,4,4h60a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM84.51,59a13.69,13.69,0,0,1-4.5-10A16.62,16.62,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92C109.71,70.39,94,67.43,84.51,59Zm87,0c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08,13.69,13.69,0,0,1,171.49,59Z"/></g></symbol>
+    <symbol id="ic-wallet" viewBox="0 0 256 256"><g fill="currentColor"><path d="M216,64H56a8,8,0,0,1,0-16H192a8,8,0,0,0,0-16H56A24,24,0,0,0,32,56V184a24,24,0,0,0,24,24H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64Zm-36,80a12,12,0,1,1,12-12A12,12,0,0,1,180,144Z"/></g></symbol>
+    <symbol id="ic-receipt" viewBox="0 0 256 256"><g fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V208a8,8,0,0,0,11.58,7.15L64,200.94l28.42,14.21a8,8,0,0,0,7.16,0L128,200.94l28.42,14.21a8,8,0,0,0,7.16,0L192,200.94l28.42,14.21A8,8,0,0,0,232,208V56A16,16,0,0,0,216,40ZM176,144H80a8,8,0,0,1,0-16h96a8,8,0,0,1,0,16Zm0-32H80a8,8,0,0,1,0-16h96a8,8,0,0,1,0,16Z"/></g></symbol>
+    <symbol id="ic-chalkboard-teacher" viewBox="0 0 256 256"><g fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H53.39a8,8,0,0,0,7.23-4.57,48,48,0,0,1,86.76,0,8,8,0,0,0,7.23,4.57H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM104,168a32,32,0,1,1,32-32A32,32,0,0,1,104,168Zm112,32H159.43a63.93,63.93,0,0,0-13.16-16H192a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v96a8,8,0,0,0,6,7.75A63.72,63.72,0,0,0,48.57,200H40V56H216Z"/></g></symbol>
+    <symbol id="ic-calendar-x" viewBox="0 0 256 256"><g fill="currentColor"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM157.66,170.34a8,8,0,0,1-11.32,11.32L128,163.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L116.69,152,98.34,133.66a8,8,0,0,1,11.32-11.32L128,140.69l18.34-18.35a8,8,0,0,1,11.32,11.32L139.31,152ZM208,80H48V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24Z"/></g></symbol>
+    <symbol id="ic-identification-badge" viewBox="0 0 256 256"><g fill="currentColor"><path d="M200,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V40A16,16,0,0,0,200,24ZM96,48h64a8,8,0,0,1,0,16H96a8,8,0,0,1,0-16Zm84.81,150.4a8,8,0,0,1-11.21-1.6,52,52,0,0,0-83.2,0,8,8,0,1,1-12.8-9.6A67.88,67.88,0,0,1,101,165.51a40,40,0,1,1,53.94,0A67.88,67.88,0,0,1,182.4,187.2,8,8,0,0,1,180.81,198.4ZM152,136a24,24,0,1,1-24-24A24,24,0,0,1,152,136Z"/></g></symbol>
+    <symbol id="ic-arrow-right" viewBox="0 0 256 256"><g fill="currentColor"><path d="M221.66,133.66l-72,72A8,8,0,0,1,136,200V136H40a8,8,0,0,1,0-16h96V56a8,8,0,0,1,13.66-5.66l72,72A8,8,0,0,1,221.66,133.66Z"/></g></symbol>
+    <symbol id="ic-briefcase" viewBox="0 0 256 256"><g fill="currentColor"><path d="M152,112a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,112Zm80-40V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56H80V48a24,24,0,0,1,24-24h48a24,24,0,0,1,24,24v8h40A16,16,0,0,1,232,72ZM96,56h64V48a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8Zm120,57.61V72H40v41.61A184,184,0,0,0,128,136,184,184,0,0,0,216,113.61Z"/></g></symbol>
+    <symbol id="ic-chats-circle" viewBox="0 0 256 256"><g fill="currentColor"><path d="M232.07,186.76a80,80,0,0,0-62.5-114.17A80,80,0,1,0,23.93,138.76l-7.27,24.71a16,16,0,0,0,19.87,19.87l24.71-7.27a80.39,80.39,0,0,0,25.18,7.35,80,80,0,0,0,108.34,40.65l24.71,7.27a16,16,0,0,0,19.87-19.86Zm-16.25,1.47L224,216l-27.76-8.17a8,8,0,0,0-6,.63,64.05,64.05,0,0,1-85.87-24.88A79.93,79.93,0,0,0,174.7,89.71a64,64,0,0,1,41.75,92.48A8,8,0,0,0,215.82,188.23Z"/></g></symbol>
+    <symbol id="ic-files" viewBox="0 0 256 256"><g fill="currentColor"><path d="M213.66,66.34l-40-40A8,8,0,0,0,168,24H88A16,16,0,0,0,72,40V56H56A16,16,0,0,0,40,72V216a16,16,0,0,0,16,16H168a16,16,0,0,0,16-16V200h16a16,16,0,0,0,16-16V72A8,8,0,0,0,213.66,66.34ZM136,192H88a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm0-32H88a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm64,24H184V104a8,8,0,0,0-2.34-5.66l-40-40A8,8,0,0,0,136,56H88V40h76.69L200,75.31Z"/></g></symbol>
+    <symbol id="ic-hand-coins" viewBox="0 0 256 256"><g fill="currentColor"><path d="M128.09,57.38a36,36,0,0,1,55.17-27.82,4,4,0,0,1-.56,7A52.06,52.06,0,0,0,152,84c0,1.17,0,2.34.12,3.49a4,4,0,0,1-6,3.76A36,36,0,0,1,128.09,57.38ZM240,160.61a24.47,24.47,0,0,1-13.6,22l-.44.2-38.83,16.54a6.94,6.94,0,0,1-1.19.4l-64,16A7.93,7.93,0,0,1,120,216H16A16,16,0,0,1,0,200V160a16,16,0,0,1,16-16H44.69l22.62-22.63A31.82,31.82,0,0,1,89.94,112H140a28,28,0,0,1,27.25,34.45l41.84-9.62A24.61,24.61,0,0,1,240,160.61Zm-16,0a8.61,8.61,0,0,0-10.87-8.3l-.31.08-67,15.41a8.32,8.32,0,0,1-1.79.2H112a8,8,0,0,1,0-16h28a12,12,0,0,0,0-24H89.94a15.86,15.86,0,0,0-11.31,4.69L56,155.31V200h63l62.43-15.61,38-16.18A8.56,8.56,0,0,0,224,160.61ZM168,84a36,36,0,1,0,36-36A36,36,0,0,0,168,84Z"/></g></symbol>
+    <symbol id="ic-bank" viewBox="0 0 256 256"><g fill="currentColor"><path d="M248,208a8,8,0,0,1-8,8H16a8,8,0,0,1,0-16H240A8,8,0,0,1,248,208ZM16.3,98.18a8,8,0,0,1,3.51-9l104-64a8,8,0,0,1,8.38,0l104,64A8,8,0,0,1,232,104H208v64h16a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H48V104H24A8,8,0,0,1,16.3,98.18ZM144,160a8,8,0,0,0,16,0V112a8,8,0,0,0-16,0Zm-48,0a8,8,0,0,0,16,0V112a8,8,0,0,0-16,0Z"/></g></symbol>
+    <symbol id="ic-scales" viewBox="0 0 256 256"><g fill="currentColor"><path d="M239.43,133l-32-80A8,8,0,0,0,200,48a8.27,8.27,0,0,0-1.73.21L136,62V40a8,8,0,0,0-16,0V65.58L54.27,80.21A8,8,0,0,0,48.57,85l-32,80a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32a7.92,7.92,0,0,0-.57-3L66.92,93.77,120,82V208H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16H136V78.42L187,67.1,160.57,133a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32A7.92,7.92,0,0,0,239.43,133Zm-160,35H32.62L56,109.54Zm97.24-32L200,77.54,223.38,136Z"/></g></symbol>
+    <symbol id="ic-users-three" viewBox="0 0 256 256"><g fill="currentColor"><path d="M64.12,147.8a4,4,0,0,1-4,4.2H16a8,8,0,0,1-7.8-6.17,8.35,8.35,0,0,1,1.62-6.93A67.79,67.79,0,0,1,37,117.51a40,40,0,1,1,66.46-35.8,3.94,3.94,0,0,1-2.27,4.18A64.08,64.08,0,0,0,64,144C64,145.28,64,146.54,64.12,147.8Zm182-8.91A67.76,67.76,0,0,0,219,117.51a40,40,0,1,0-66.46-35.8,3.94,3.94,0,0,0,2.27,4.18A64.08,64.08,0,0,1,192,144c0,1.28,0,2.54-.12,3.8a4,4,0,0,0,4,4.2H240a8,8,0,0,0,7.8-6.17A8.33,8.33,0,0,0,246.17,138.89Zm-89,43.18a48,48,0,1,0-58.37,0A72.13,72.13,0,0,0,65.07,212,8,8,0,0,0,72,224H184a8,8,0,0,0,6.93-12A72.15,72.15,0,0,0,157.19,182.07Z"/></g></symbol>
+    <symbol id="ic-magnifying-glass" viewBox="0 0 256 256"><g fill="currentColor"><path d="M168,112a56,56,0,1,1-56-56A56,56,0,0,1,168,112Zm61.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88,88,0,1,1,11.32-11.31l50.06,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"/></g></symbol>
+    <symbol id="ic-chat-circle-text" viewBox="0 0 256 256"><g fill="currentColor"><path d="M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm32,128H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Zm0-32H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Z"/></g></symbol>
+    <symbol id="ic-plus-bold" viewBox="0 0 256 256"><g fill="currentColor"><path d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z"/></g></symbol>
+    <symbol id="ic-envelope-simple" viewBox="0 0 256 256"><g fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-8,144H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></g></symbol>
+    <symbol id="ic-map-pin" viewBox="0 0 256 256"><g fill="currentColor"><path d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"/></g></symbol>
+    <symbol id="ic-seal-check" viewBox="0 0 256 256"><g fill="currentColor"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-52.2,6.84-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></g></symbol>
+  </defs>
+</svg>
+
+<div id="topo">
+
+  <!-- Header -->
+  <div class="topbar">
+    <img class="logo" src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/logo-horizontal-dark.png" alt="Carolina Neves Hohlenwerger · Advogada" width="1000" height="187">
+    <a class="btn wa-link" data-cta="topo" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+  </div>
+
+  <!-- 1. Hero -->
+  <section class="hero tex">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow rv">Verbas não pagas no serviço público</span>
+        <h1 class="rv" style="--d:.06s">Trabalhou em um órgão público e <em>saiu sem receber?</em></h1>
+        <p class="lead-p rv" style="--d:.12s">Orientação jurídica para <strong>comissionados exonerados, contratados, professores e terceirizados</strong> com pagamentos pendentes após o desligamento. Entenda quais direitos podem se aplicar ao seu caso.</p>
+        <div class="cta-row rv" style="--d:.18s">
+          <a class="btn wa-link" data-cta="hero" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+        </div>
+      </div>
+      <div class="hero-media rv" style="--d:.1s">
+        <div class="hero-photo">
+          <img src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/carolina-hero.jpg" alt="Advogada Carolina Neves Hohlenwerger" width="933" height="1400" fetchpriority="high">
+        </div>
+        <img class="hero-logo-m" src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/logo-horizontal-dark.png" alt="" width="1000" height="187" style="display:none">
+        <div class="hero-sign"><strong>Carolina Neves Hohlenwerger</strong><span>Advogada · OAB/BA</span></div>
+      </div>
+    </div>
+    <div class="hero-strip" aria-label="Pagamentos que podem ser analisados">
+      <div class="strip-track">
+        <ul class="strip-group">
+          <li><svg aria-hidden="true"><use href="#ic-sun"/></svg>Férias não pagas</li>
+          <li><svg aria-hidden="true"><use href="#ic-coins"/></svg>Adicional de 1/3</li>
+          <li><svg aria-hidden="true"><use href="#ic-gift"/></svg>13º salário</li>
+          <li><svg aria-hidden="true"><use href="#ic-wallet"/></svg>Salários atrasados</li>
+          <li><svg aria-hidden="true"><use href="#ic-receipt"/></svg>Rescisão de terceirizados</li>
+          <li><svg aria-hidden="true"><use href="#ic-chalkboard-teacher"/></svg>Contratos de professores</li>
+          <li><svg aria-hidden="true"><use href="#ic-calendar-x"/></svg>Contratos temporários encerrados</li>
+        </ul>
+        <ul class="strip-group" aria-hidden="true">
+          <li><svg aria-hidden="true"><use href="#ic-sun"/></svg>Férias não pagas</li>
+          <li><svg aria-hidden="true"><use href="#ic-coins"/></svg>Adicional de 1/3</li>
+          <li><svg aria-hidden="true"><use href="#ic-gift"/></svg>13º salário</li>
+          <li><svg aria-hidden="true"><use href="#ic-wallet"/></svg>Salários atrasados</li>
+          <li><svg aria-hidden="true"><use href="#ic-receipt"/></svg>Rescisão de terceirizados</li>
+          <li><svg aria-hidden="true"><use href="#ic-chalkboard-teacher"/></svg>Contratos de professores</li>
+          <li><svg aria-hidden="true"><use href="#ic-calendar-x"/></svg>Contratos temporários encerrados</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Qual é a sua situação -->
+  <section class="sec cream pick-sec" id="situacao">
+    <div class="wrap">
+      <div class="ed-head rv">
+        <div>
+          <span class="eyebrow">Identifique o seu caso</span>
+          <h2 class="ed-title">Qual era o seu <em>vínculo</em> com o órgão público?</h2>
+          <p class="lead-p">Os direitos mudam conforme a forma de contratação. Escolha a situação mais parecida com a sua.</p>
+        </div>
+      </div>
+      <div class="pick-grid">
+        <a class="pick main tex rv" href="#comissionados">
+          <span class="pick-tag">Perfil 01</span>
+          <span class="pick-ic"><svg aria-hidden="true"><use href="#ic-identification-badge"/></svg></span>
+          <h3>Fui exonerado(a) de um cargo comissionado</h3>
+          <p>Trabalhou em prefeitura em cargo de confiança, foi exonerado(a) e ficou sem receber férias, o adicional de 1/3, o 13º ou salários.</p>
+          <span class="pick-more">Ver o meu caso<svg aria-hidden="true"><use href="#ic-arrow-right"/></svg></span>
+        </a>
+        <a class="pick rv" style="--d:.06s" href="#contratados">
+          <span class="pick-ic"><svg aria-hidden="true"><use href="#ic-chalkboard-teacher"/></svg></span>
+          <h3>Fui contratado(a) ou professor(a) e o contrato acabou</h3>
+          <p>Teve o contrato com a prefeitura encerrado e não sabe quais pagamentos deveria ter recebido.</p>
+          <span class="pick-more">Ver o meu caso<svg aria-hidden="true"><use href="#ic-arrow-right"/></svg></span>
+        </a>
+        <a class="pick rv" style="--d:.12s" href="#terceirizados">
+          <span class="pick-ic"><svg aria-hidden="true"><use href="#ic-briefcase"/></svg></span>
+          <h3>Trabalhava em uma terceirizada e saí sem a rescisão</h3>
+          <p>Era funcionário(a) de uma empresa que prestava serviço a um órgão público e foi desligado(a) sem receber.</p>
+          <span class="pick-more">Ver o meu caso<svg aria-hidden="true"><use href="#ic-arrow-right"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Comissionados (foco principal) -->
+  <section class="sec tex prof" id="comissionados">
+    <div class="wrap">
+      <div class="prof-side rv">
+        <span class="prof-num">Perfil 01 · Cargos comissionados</span>
+        <span class="eyebrow">Exonerados de prefeituras</span>
+        <h2 class="ed-title">Ser comissionado <em>não significa</em> sair sem direitos</h2>
+        <p class="lead-p">Muita gente acredita que, por ter ocupado um cargo de confiança, não tem nada a receber depois da exoneração. <strong>Nem sempre é assim.</strong> Dependendo do vínculo e do período trabalhado, alguns pagamentos podem ser devidos e cobrados.</p>
+        <div class="cta-row">
+          <a class="btn wa-link" data-cta="comissionados" data-perfil="comissionado" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Fui%20exonerado(a)%20de%20um%20cargo%20comissionado%20e%20ficaram%20pagamentos%20pendentes.%20Gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+          <span class="cta-note"><svg aria-hidden="true"><use href="#ic-chats-circle"/></svg>Conte pelo WhatsApp o que ficou sem pagar</span>
+        </div>
+      </div>
+      <div class="prof-panel rv" style="--d:.08s">
+        <h3>Pendências que podem ser analisadas</h3>
+        <ul class="verbas">
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-sun"/></svg></span><span><strong>Férias não gozadas ou proporcionais</strong><span class="t">Períodos de férias que não foram tirados nem pagos até a exoneração.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-coins"/></svg></span><span><strong>Adicional de 1/3 de férias</strong><span class="t">O terço constitucional que acompanha as férias.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-gift"/></svg></span><span><strong>13º salário</strong><span class="t">Integral ou proporcional ao tempo trabalhado no ano.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-wallet"/></svg></span><span><strong>Salários em atraso</strong><span class="t">Meses trabalhados e não pagos antes ou depois da exoneração.</span></span></li>
+        </ul>
+        <p class="prof-foot">Os direitos aplicáveis dependem do vínculo, da legislação do município e dos documentos de cada caso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Contratados e professores -->
+  <section class="sec paper prof" id="contratados">
+    <div class="wrap">
+      <div class="prof-side rv">
+        <span class="prof-num">Perfil 02 · Contratados e professores</span>
+        <span class="eyebrow">Contratos encerrados com prefeituras</span>
+        <h2 class="ed-title">O contrato era temporário. <em>E agora?</em></h2>
+        <p class="lead-p">Contratos temporários e de professores seguem regras próprias, que variam conforme a forma de contratação e a lei do município. Por isso, <strong>a análise começa pelo seu contrato</strong>: é ele que mostra quais verbas podem ser devidas no encerramento.</p>
+        <div class="cta-row">
+          <a class="btn wa-link" data-cta="contratados" data-perfil="contratado-professor" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Meu%20contrato%20com%20a%20prefeitura%20(contratado%2Fprofessor)%20foi%20encerrado%20e%20tenho%20d%C3%BAvidas%20sobre%20os%20pagamentos.%20Gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+          <span class="cta-note"><svg aria-hidden="true"><use href="#ic-chats-circle"/></svg>Envie suas dúvidas sobre o encerramento</span>
+        </div>
+      </div>
+      <div class="prof-panel rv" style="--d:.08s">
+        <h3>O que costuma gerar dúvida</h3>
+        <ul class="verbas">
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-calendar-x"/></svg></span><span><strong>Contrato encerrado sem acerto</strong><span class="t">O vínculo terminou e os valores finais não foram pagos ou não foram explicados.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-sun"/></svg></span><span><strong>Férias, 1/3 e 13º</strong><span class="t">Se foram pagos proporcionalmente ao tempo de contrato.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-wallet"/></svg></span><span><strong>Salários atrasados</strong><span class="t">Meses trabalhados que ficaram sem pagamento.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-files"/></svg></span><span><strong>Contratos renovados várias vezes</strong><span class="t">Situações em que a contratação se repetiu por anos e merece uma análise mais cuidadosa.</span></span></li>
+        </ul>
+        <p class="prof-foot">Cada contrato é avaliado individualmente, considerando a lei local e os documentos apresentados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Terceirizados -->
+  <section class="sec sand prof" id="terceirizados">
+    <div class="wrap">
+      <div class="prof-side rv">
+        <span class="prof-num">Perfil 03 · Terceirizados</span>
+        <span class="eyebrow">Empresas que prestavam serviço ao órgão público</span>
+        <h2 class="ed-title">Foi desligado(a) da terceirizada <em>sem a rescisão?</em></h2>
+        <p class="lead-p">Quando a empresa que presta serviço a um órgão público demite sem pagar, fecha ou desaparece, é comum o trabalhador achar que não há mais o que fazer. <strong>Ainda pode haver caminhos</strong>, e eles dependem do contrato entre a empresa e o órgão e das provas do seu caso.</p>
+        <div class="cta-row">
+          <a class="btn wa-link" data-cta="terceirizados" data-perfil="terceirizado" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Trabalhava%20em%20uma%20empresa%20terceirizada%20de%20%C3%B3rg%C3%A3o%20p%C3%BAblico%20e%20fui%20desligado(a)%20sem%20receber%20a%20rescis%C3%A3o.%20Gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+          <span class="cta-note"><svg aria-hidden="true"><use href="#ic-chats-circle"/></svg>Informe a empresa e o órgão onde trabalhava</span>
+        </div>
+      </div>
+      <div class="prof-panel rv" style="--d:.08s">
+        <h3>Valores da rescisão que podem estar pendentes</h3>
+        <ul class="verbas">
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-receipt"/></svg></span><span><strong>Verbas rescisórias</strong><span class="t">Saldo de salário, aviso prévio, férias com 1/3 e 13º proporcional, conforme o tipo de desligamento.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-hand-coins"/></svg></span><span><strong>FGTS e multa</strong><span class="t">Depósitos que não foram feitos e a multa devida na dispensa sem justa causa.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-wallet"/></svg></span><span><strong>Salários atrasados</strong><span class="t">Meses trabalhados sem pagamento antes do desligamento.</span></span></li>
+          <li><span class="v-ic"><svg aria-hidden="true"><use href="#ic-bank"/></svg></span><span><strong>Responsabilidade do órgão público</strong><span class="t">Em algumas situações, a participação do órgão que contratou a empresa pode ser discutida.</span></span></li>
+        </ul>
+        <p class="prof-foot">A viabilidade da cobrança é avaliada a partir dos documentos e das particularidades de cada caso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Objeções -->
+  <section class="sec dark obj">
+    <div class="wrap">
+      <div class="obj-side rv">
+        <span class="eyebrow">Dúvidas comuns</span>
+        <h2 class="ed-title">Você talvez esteja <em>pensando</em> assim</h2>
+        <p class="lead-p">São receios comuns que fazem muita gente adiar a análise do próprio caso. <strong>Entender a sua situação não obriga você a nada.</strong></p>
+        <div class="cta-row">
+          <a class="btn wa-link" data-cta="objecoes" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+        </div>
+      </div>
+      <div class="obj-list">
+        <article class="obj-item is-hl rv"><p class="obj-q">Por ser comissionado, acho que não tenho direito a receber nada.</p><p class="obj-a">O cargo de confiança pode ser encerrado a qualquer momento, mas isso <strong>não apaga os pagamentos referentes ao período trabalhado</strong>. Férias, 1/3, 13º e salários pendentes podem ser analisados.</p></article>
+        <article class="obj-item rv"><p class="obj-q">Tenho receio de cobrar a prefeitura.</p><p class="obj-a">Buscar valores devidos é um direito. A advogada explica <strong>como funciona cada caminho</strong> antes de qualquer decisão, para você decidir com segurança.</p></article>
+        <article class="obj-item rv"><p class="obj-q">Meu contrato era temporário. Será que tenho algum direito?</p><p class="obj-a">Contratos temporários também podem gerar pagamentos no encerramento. <strong>O que vale é o que diz o seu contrato e a lei aplicável</strong>, por isso a análise é individual.</p></article>
+        <article class="obj-item rv"><p class="obj-q">A terceirizada fechou ou sumiu. Ainda posso buscar os valores?</p><p class="obj-a">O fechamento da empresa não encerra a discussão automaticamente. <strong>Há situações em que ainda é possível buscar os valores</strong>, e isso é avaliado com os documentos do caso.</p></article>
+        <article class="obj-item rv"><p class="obj-q">O órgão público diz que a responsabilidade é apenas da empresa.</p><p class="obj-a">Essa resposta é comum, mas <strong>nem sempre encerra a questão</strong>. A responsabilidade do órgão depende de como o contrato foi fiscalizado e das provas do caso.</p></article>
+        <article class="obj-item rv"><p class="obj-q">Não sei a quem recorrer para entender minha situação.</p><p class="obj-a">Basta enviar uma mensagem pelo WhatsApp contando o seu vínculo e o que ficou pendente. <strong>A partir disso, você recebe as orientações sobre o atendimento.</strong></p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Como funciona -->
+  <section class="sec tex how">
+    <div class="wrap">
+      <div class="ed-head rv">
+        <div>
+          <span class="eyebrow">Passo a passo</span>
+          <h2 class="ed-title">Como funciona o <em>atendimento</em></h2>
+        </div>
+        <a class="btn wa-link" data-cta="como-funciona" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+      </div>
+      <div class="how-steps">
+        <div class="how-step rv"><span class="how-num">01</span><h3>Contato pelo WhatsApp</h3><p>Você apresenta a sua situação e tira as primeiras dúvidas sobre o atendimento.</p></div>
+        <div class="how-step rv" style="--d:.06s"><span class="how-num">02</span><h3>Identificação do vínculo</h3><p>Cargo comissionado, contrato temporário ou trabalho terceirizado: é o vínculo que define os direitos.</p></div>
+        <div class="how-step rv" style="--d:.12s"><span class="how-num">03</span><h3>Análise dos documentos</h3><p>São avaliados os documentos, a data do desligamento e os pagamentos pendentes.</p></div>
+        <div class="how-step rv" style="--d:.18s"><span class="how-num">04</span><h3>Orientação dos próximos passos</h3><p>A advogada avalia a viabilidade da cobrança e orienta o caminho conforme as particularidades do caso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. O que informar no primeiro contato -->
+  <section class="sec paper info">
+    <div class="wrap">
+      <div class="info-media rv">
+        <div class="info-photo"><img src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/carolina-analise.jpg" alt="Advogada Carolina Hohlenwerger analisando documentos" width="728" height="1200" loading="lazy"></div>
+      </div>
+      <div class="rv" style="--d:.08s">
+        <span class="eyebrow">Para agilizar a análise</span>
+        <h2 class="ed-title">O que informar no <em>primeiro contato</em></h2>
+        <p class="lead-p">Com essas informações, a advogada orienta <strong>quais documentos separar</strong> e encaminha o seu caso para a análise jurídica individualizada.</p>
+        <ul class="checks">
+          <li><span><strong>Tipo de vínculo</strong><span>Comissionado, contratado, professor ou terceirizado.</span></span></li>
+          <li><span><strong>Órgão público ou empresa</strong><span>Onde você trabalhava e, se for o caso, qual empresa contratava.</span></span></li>
+          <li><span><strong>Município</strong><span>A cidade onde o serviço era prestado.</span></span></li>
+          <li><span><strong>Data do desligamento</strong><span>Quando ocorreu a exoneração, o fim do contrato ou a demissão.</span></span></li>
+          <li><span><strong>Pagamentos pendentes</strong><span>O que ficou sem pagar: férias, 1/3, 13º, salários ou rescisão.</span></span></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn wa-link" data-cta="primeiro-contato" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Sobre / diferenciais -->
+  <section class="sec dark about">
+    <div class="wrap">
+      <div class="about-top">
+        <div class="about-photo rv"><img src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/carolina-sobre.jpg" alt="Advogada Carolina Neves Hohlenwerger" width="800" height="1200" loading="lazy"></div>
+        <div class="rv" style="--d:.08s">
+          <span class="eyebrow">Quem vai analisar o seu caso</span>
+          <h2 class="ed-title">Atuação em <em>Direito Público</em> com foco em verbas não pagas</h2>
+          <p class="lead-p">Atenção específica a <strong>comissionados exonerados, contratados, professores e terceirizados</strong> que deixaram o serviço público com pagamentos pendentes, com uma comunicação clara para quem não conhece os próprios direitos.</p>
+          <div class="about-name">
+            <img src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/monograma.png" alt="" width="300" height="300" loading="lazy">
+            <span><strong>Carolina Neves Hohlenwerger</strong><span>Advogada · Assessoria jurídica · OAB/BA</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="why-grid">
+        <div class="why-cell rv"><span class="why-ic"><svg aria-hidden="true"><use href="#ic-scales"/></svg></span><div><h3>Atuação em Direito Público</h3><p>Foco em verbas não pagas após o desligamento.</p></div></div>
+        <div class="why-cell rv" style="--d:.06s"><span class="why-ic"><svg aria-hidden="true"><use href="#ic-users-three"/></svg></span><div><h3>Atenção a cada perfil</h3><p>Comissionados exonerados, contratados, professores e terceirizados.</p></div></div>
+        <div class="why-cell rv" style="--d:.12s"><span class="why-ic"><svg aria-hidden="true"><use href="#ic-magnifying-glass"/></svg></span><div><h3>Análise individualizada</h3><p>Considera o vínculo, o órgão público ou a empresa e a documentação.</p></div></div>
+        <div class="why-cell rv"><span class="why-ic"><svg aria-hidden="true"><use href="#ic-chat-circle-text"/></svg></span><div><h3>Comunicação acessível</h3><p>Explicações claras para quem não conhece os seus direitos.</p></div></div>
+        <div class="why-cell rv" style="--d:.06s"><span class="why-ic"><svg aria-hidden="true"><use href="#ic-chats-circle"/></svg></span><div><h3>Contato pelo WhatsApp</h3><p>Para apresentar a situação e entender como funciona o atendimento.</p></div></div>
+        <div class="why-cell cta-cell rv" style="--d:.12s"><a class="btn wa-link" data-cta="diferenciais" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ -->
+  <section class="sec cream faq" id="faq">
+    <div class="wrap">
+      <div class="faq-side rv">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2 class="ed-title">Antes de <em>conversar</em></h2>
+        <p class="lead-p">Respostas rápidas para as dúvidas mais comuns de quem saiu do serviço público sem receber.</p>
+        <div class="cta-row"><a class="btn wa-link" data-cta="faq" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a></div>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item rv" open>
+          <summary><span>Fui comissionado(a). Tenho mesmo algum direito depois da exoneração?</span><span class="faq-plus"><svg aria-hidden="true"><use href="#ic-plus-bold"/></svg></span></summary>
+          <div class="faq-a"><p>Pode ter. A exoneração encerra o cargo, mas não apaga os pagamentos referentes ao período trabalhado. Férias, adicional de 1/3, 13º e salários pendentes podem ser devidos, conforme o vínculo e a legislação aplicável. A análise do caso mostra o que se aplica à sua situação.</p></div>
+        </details>
+        <details class="faq-item rv">
+          <summary><span>O que acontece depois que eu enviar a mensagem?</span><span class="faq-plus"><svg aria-hidden="true"><use href="#ic-plus-bold"/></svg></span></summary>
+          <div class="faq-a"><p>No primeiro contato, são identificados o tipo de vínculo, o órgão público ou a empresa, o município, a data do desligamento e os pagamentos pendentes. Com isso, você recebe a orientação sobre quais documentos separar e o caso segue para a análise jurídica individualizada.</p></div>
+        </details>
+        <details class="faq-item rv">
+          <summary><span>Preciso já ter todos os documentos para entrar em contato?</span><span class="faq-plus"><svg aria-hidden="true"><use href="#ic-plus-bold"/></svg></span></summary>
+          <div class="faq-a"><p>Não. Você pode começar contando a sua situação pelo WhatsApp. A partir das informações iniciais, a advogada indica quais documentos são necessários para analisar o seu caso.</p></div>
+        </details>
+        <details class="faq-item rv">
+          <summary><span>Existe prazo para cobrar os valores?</span><span class="faq-plus"><svg aria-hidden="true"><use href="#ic-plus-bold"/></svg></span></summary>
+          <div class="faq-a"><p>Sim. A cobrança de valores está sujeita a prazos previstos em lei, que variam conforme o tipo de vínculo. Por isso, é importante não adiar a análise do caso.</p></div>
+        </details>
+        <details class="faq-item rv">
+          <summary><span>A prefeitura ou a empresa vai saber que procurei uma advogada?</span><span class="faq-plus"><svg aria-hidden="true"><use href="#ic-plus-bold"/></svg></span></summary>
+          <div class="faq-a"><p>O contato com a advogada é protegido pelo sigilo profissional. Qualquer medida de cobrança só é tomada com a sua autorização, depois que você entender os caminhos possíveis.</p></div>
+        </details>
+        <details class="faq-item rv">
+          <summary><span>Trabalhei em Salvador, Camaçari, Lauro de Freitas, Itabuna ou Ipiaú. Posso ser atendido(a)?</span><span class="faq-plus"><svg aria-hidden="true"><use href="#ic-plus-bold"/></svg></span></summary>
+          <div class="faq-a"><p>Sim. Informe no primeiro contato o município e o órgão público ou a empresa onde trabalhava, para que o atendimento seja orientado conforme a sua situação.</p></div>
+        </details>
+        <details class="faq-item rv">
+          <summary><span>Como funciona a contratação e os honorários?</span><span class="faq-plus"><svg aria-hidden="true"><use href="#ic-plus-bold"/></svg></span></summary>
+          <div class="faq-a"><p>As condições do atendimento são explicadas no contato pelo WhatsApp, antes de qualquer contratação, para que você decida sabendo exatamente como funciona.</p></div>
+        </details>
+      </div>
+    </div>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Fui comissionado(a). Tenho mesmo algum direito depois da exoneração?","acceptedAnswer":{"@type":"Answer","text":"Pode ter. A exoneração encerra o cargo, mas não apaga os pagamentos referentes ao período trabalhado. Férias, adicional de 1/3, 13º e salários pendentes podem ser devidos, conforme o vínculo e a legislação aplicável. A análise do caso mostra o que se aplica à sua situação."}},{"@type":"Question","name":"O que acontece depois que eu enviar a mensagem?","acceptedAnswer":{"@type":"Answer","text":"No primeiro contato, são identificados o tipo de vínculo, o órgão público ou a empresa, o município, a data do desligamento e os pagamentos pendentes. Com isso, você recebe a orientação sobre quais documentos separar e o caso segue para a análise jurídica individualizada."}},{"@type":"Question","name":"Preciso já ter todos os documentos para entrar em contato?","acceptedAnswer":{"@type":"Answer","text":"Não. Você pode começar contando a sua situação pelo WhatsApp. A partir das informações iniciais, a advogada indica quais documentos são necessários para analisar o seu caso."}},{"@type":"Question","name":"Existe prazo para cobrar os valores?","acceptedAnswer":{"@type":"Answer","text":"Sim. A cobrança de valores está sujeita a prazos previstos em lei, que variam conforme o tipo de vínculo. Por isso, é importante não adiar a análise do caso."}},{"@type":"Question","name":"A prefeitura ou a empresa vai saber que procurei uma advogada?","acceptedAnswer":{"@type":"Answer","text":"O contato com a advogada é protegido pelo sigilo profissional. Qualquer medida de cobrança só é tomada com a sua autorização, depois que você entender os caminhos possíveis."}},{"@type":"Question","name":"Trabalhei em Salvador, Camaçari, Lauro de Freitas, Itabuna ou Ipiaú. Posso ser atendido(a)?","acceptedAnswer":{"@type":"Answer","text":"Sim. Informe no primeiro contato o município e o órgão público ou a empresa onde trabalhava, para que o atendimento seja orientado conforme a sua situação."}},{"@type":"Question","name":"Como funciona a contratação e os honorários?","acceptedAnswer":{"@type":"Answer","text":"As condições do atendimento são explicadas no contato pelo WhatsApp, antes de qualquer contratação, para que você decida sabendo exatamente como funciona."}}]}</script>
+  </section>
+
+  <!-- 11. CTA final -->
+  <section class="tex final">
+    <div class="wrap">
+      <div class="final-copy">
+        <span class="eyebrow rv">Saiu sem receber?</span>
+        <h2 class="ed-title rv" style="--d:.06s">Entenda o que pode ser cobrado no <em>seu caso</em></h2>
+        <p class="lead-p rv" style="--d:.12s">Conte pelo WhatsApp qual era o seu vínculo, onde trabalhava e o que ficou pendente. <strong>Você recebe as informações sobre o atendimento</strong> e os próximos passos para a análise.</p>
+        <div class="cta-row rv" style="--d:.18s">
+          <a class="btn wa-link" data-cta="final" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale com um advogado</a>
+        </div>
+      </div>
+      <div class="final-photo rv" style="--d:.1s"><img src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/carolina-contato.jpg" alt="Advogada Carolina Neves Hohlenwerger" width="800" height="1200" loading="lazy"></div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><img class="logo" src="https://carolinahohlenwerger.com.br/wp-content/uploads/2026/11/logo-horizontal.png" alt="Carolina Neves Hohlenwerger · Advogada | Assessoria Jurídica" width="1000" height="187" loading="lazy"></div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a class="wa-link" data-cta="rodape" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Fale pelo WhatsApp</a></li>
+          <li><a href="mailto:carollmaria@hotmail.com"><svg aria-hidden="true"><use href="#ic-envelope-simple"/></svg>carollmaria@hotmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atuação</h4>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#ic-map-pin"/></svg>Salvador · Ipiaú · Bahia</li>
+          <li><svg aria-hidden="true"><use href="#ic-seal-check"/></svg>Carolina Neves Hohlenwerger · OAB/BA</li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer">Conteúdo de caráter informativo. As informações desta página não substituem a análise individual do caso por um advogado. A existência de direitos e a viabilidade de cobrança dependem do vínculo, da legislação aplicável, dos documentos e das particularidades de cada situação. Não há promessa de resultado.</p>
+    <p class="copy">© 2026 Carolina Hohlenwerger Advocacia. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" id="waFloat" data-cta="flutuante" data-perfil="geral" href="https://wa.me/557381219339?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Sa%C3%AD%20de%20um%20trabalho%20no%20servi%C3%A7o%20p%C3%BAblico%20com%20pagamentos%20pendentes%20e%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" rel="noopener" aria-label="Fale com um advogado pelo WhatsApp"><svg><use href="#i-wa"/></svg></a>
+</div>
+
+<script>
+(function () {
+  const root = document.getElementById('cnh-lp');
+  if (!root) return;
+  
+    // Conversão: evento no dataLayer (GTM) a cada clique no WhatsApp
+    window.dataLayer = window.dataLayer || [];
+    root.querySelectorAll('.wa-link').forEach(a => a.addEventListener('click', () => {
+      window.dataLayer.push({ event: 'whatsapp_click', cta_position: a.dataset.cta || '', perfil: a.dataset.perfil || '' });
+    }));
+  
+    // Header: no mobile só aparece depois que a página rola
+    const topbars = root.querySelectorAll('.topbar');
+    const onScrollTop = () => topbars.forEach(t => t.classList.toggle('show', window.scrollY > 60));
+    window.addEventListener('scroll', onScrollTop, { passive: true });
+    onScrollTop();
+  
+    // Botão flutuante aparece após a primeira dobra
+    const waFloat = root.querySelector('#waFloat');
+    const onScroll = () => waFloat.classList.toggle('show', window.scrollY > window.innerHeight * .6);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  
+    // Hero aparece inteira no carregamento
+    requestAnimationFrame(() => root.querySelectorAll('.hero .rv').forEach(el => el.classList.add('in')));
+  
+    // Reveal on scroll
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+    root.querySelectorAll('.rv:not(.hero .rv)').forEach(el => io.observe(el));
+})();
+</script>
