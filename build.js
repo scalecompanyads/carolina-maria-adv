@@ -6,7 +6,7 @@ const path = require('path');
 const dir = __dirname;
 
 // ---------- Configuração ----------
-const WA_NUM = '557381219339'; // número do briefing
+const WA_NUM = '557185181337'; // +55 71 8518-1337
 const wa = msg => `https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`;
 
 const CFG = {
@@ -14,10 +14,10 @@ const CFG = {
   EMAIL: 'carollmaria@hotmail.com', // do cartão de visitas
   WA_DISPLAY: 'Fale pelo WhatsApp',
   // Mensagem pré-preenchida por perfil: já chega no WhatsApp com o tipo de vínculo identificado
-  WA_GERAL: wa('Olá! Vim pelo site. Saí de um trabalho no serviço público com pagamentos pendentes e gostaria de falar com um advogado.'),
-  WA_COMISSIONADO: wa('Olá! Vim pelo site. Fui exonerado(a) de um cargo comissionado e ficaram pagamentos pendentes. Gostaria de falar com um advogado.'),
-  WA_CONTRATADO: wa('Olá! Vim pelo site. Meu contrato com a prefeitura (contratado/professor) foi encerrado e tenho dúvidas sobre os pagamentos. Gostaria de falar com um advogado.'),
-  WA_TERCEIRIZADO: wa('Olá! Vim pelo site. Trabalhava em uma empresa terceirizada de órgão público e fui desligado(a) sem receber a rescisão. Gostaria de falar com um advogado.'),
+  WA_GERAL: wa('Olá! Vim pelo site. Saí de um trabalho no serviço público com pagamentos pendentes e gostaria de falar com a advogada.'),
+  WA_COMISSIONADO: wa('Olá! Vim pelo site. Fui exonerado(a) de um cargo comissionado e ficaram pagamentos pendentes. Gostaria de falar com a advogada.'),
+  WA_CONTRATADO: wa('Olá! Vim pelo site. Meu contrato com a prefeitura (contratado/professor) foi encerrado e tenho dúvidas sobre os pagamentos. Gostaria de falar com a advogada.'),
+  WA_TERCEIRIZADO: wa('Olá! Vim pelo site. Trabalhava em uma empresa terceirizada de órgão público e fui desligado(a) sem receber a rescisão. Gostaria de falar com a advogada.'),
 };
 
 // Pasta das imagens: relativa no index.html; no embed, URL da Biblioteca de Mídia do WordPress
