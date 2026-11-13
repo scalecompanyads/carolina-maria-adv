@@ -9,15 +9,17 @@ const dir = __dirname;
 const WA_NUM = '557185181337'; // +55 71 8518-1337
 const wa = msg => `https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`;
 
+const WA_PADRAO = wa('Olá! Vim pelo site e gostaria de falar com a advogada sobre o meu caso.');
+
 const CFG = {
   GTM_ID: 'GTM-M6NT5GX4',
   EMAIL: 'carollmaria@hotmail.com', // do cartão de visitas
   WA_DISPLAY: 'Fale pelo WhatsApp',
-  // Mensagem pré-preenchida por perfil: já chega no WhatsApp com o tipo de vínculo identificado
-  WA_GERAL: wa('Olá! Vim pelo site. Saí de um trabalho no serviço público com pagamentos pendentes e gostaria de falar com a advogada.'),
-  WA_COMISSIONADO: wa('Olá! Vim pelo site. Fui exonerado(a) de um cargo comissionado e ficaram pagamentos pendentes. Gostaria de falar com a advogada.'),
-  WA_CONTRATADO: wa('Olá! Vim pelo site. Meu contrato com a prefeitura (contratado/professor) foi encerrado e tenho dúvidas sobre os pagamentos. Gostaria de falar com a advogada.'),
-  WA_TERCEIRIZADO: wa('Olá! Vim pelo site. Trabalhava em uma empresa terceirizada de órgão público e fui desligado(a) sem receber a rescisão. Gostaria de falar com a advogada.'),
+  // Mensagem padrão em todos os botões (o perfil de cada clique continua no evento whatsapp_click do GTM)
+  WA_GERAL: WA_PADRAO,
+  WA_COMISSIONADO: WA_PADRAO,
+  WA_CONTRATADO: WA_PADRAO,
+  WA_TERCEIRIZADO: WA_PADRAO,
 };
 
 // Pasta das imagens: relativa no index.html; no embed, URL da Biblioteca de Mídia do WordPress
